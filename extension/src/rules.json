@@ -1,7 +1,9 @@
 {
   "blockedDomains": [
-    "example.com",
     "casino.com",
-    "bet365.com"
+    "bet365.com",
+    "bwin.de",
+    "tipico.de",
+    "example.com"
   ]
 }
