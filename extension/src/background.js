@@ -16,7 +16,11 @@ chrome.runtime.onStartup.addListener(async () => {
     await loadRules();
 });
 
-chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => { 
+    
+    if (blockedDomains.length === 0) {
+    await loadRules();
+}
 
     if (changeInfo.status !== "complete") return;
     if (!tab.url) return;
