@@ -18,7 +18,7 @@ async function loadRules() {
 }
 
 async function loadRules() {
-    const response = await fetch(chrome.runtime.getURL("src/data/blocked-domains.json"));
+    const response = await fetch(chrome.runtime.getURL("src/rules.json"));
     const data = await response.json();
     blockedDomains = data.blockedDomains;
     console.log("📋 Regeln geladen:", blockedDomains);
