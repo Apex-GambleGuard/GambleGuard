@@ -2,11 +2,11 @@
   "manifest_version": 3,
   "name": "GambleGuard",
   "version": "0.1.0",
-  "description": "Helping people stay gambling-free by blocking gambling websites.",
+  "description": "Blocks gambling websites.",
   "permissions": [
     "tabs",
     "storage",
-    "declarativeNetRequest"
+    "webNavigation"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -16,5 +16,16 @@
   },
   "action": {
     "default_title": "GambleGuard"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/block.html",
+        "src/rules.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
 }
