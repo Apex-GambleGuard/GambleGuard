@@ -34,8 +34,4 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
         });
     }
 
-});blockedDomains = [
- "bet365.com",
- "tipico.de",
- "stake.com"
-]
+});
