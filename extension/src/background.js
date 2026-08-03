@@ -1,7 +1,24 @@
 let blockedDomains = [];
 
+const ruleFiles = [
+    "src/data/blocked-domains.json",
+    "src/data/casinos.json",
+    "src/data/sportsbooks.json",
+    "src/data/crypto-casinos.json",
+    "src/data/poker.json",
+    "src/data/bingo.json",
+    "src/data/lottery.json",
+    "src/data/esports.json",
+    "src/data/mirrors.json",
+    "src/data/skin-gambling.json"
+];
+
 async function loadRules() {
-    const response = await fetch(chrome.runtime.getURL("src/rules.json"));
+    // Das bauen wir als Nächstes um
+}
+
+async function loadRules() {
+    const response = await fetch(chrome.runtime.getURL("src/data/blocked-domains.json"));
     const data = await response.json();
     blockedDomains = data.blockedDomains;
     console.log("📋 Regeln geladen:", blockedDomains);
