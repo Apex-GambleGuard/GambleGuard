@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "GambleGuard",
   "version": "0.1.0",
-  "description": "Blocks gambling websites to help users stay gambling-free.",
+  "description": "Helping people stay gambling-free by blocking gambling websites.",
   "permissions": [
     "tabs",
     "storage",
@@ -16,10 +16,5 @@
   },
   "action": {
     "default_title": "GambleGuard"
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
   }
 }
