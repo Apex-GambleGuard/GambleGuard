@@ -1,7 +1,6 @@
 {
-  "name": "gambleguard-extension",
+  "name": "gambleguard",
   "version": "0.1.0",
   "private": true,
-  "description": "Browser extension for GambleGuard",
   "license": "GPL-3.0"
 }
